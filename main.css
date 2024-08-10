@@ -71,6 +71,13 @@ body {
   color: var(--color-white);
   text-decoration: none;
 }
+.social-link:focus-within,
+.attribution a:focus {
+  outline: 1px solid var(--color-green);
+}
+.social-link__url:focus {
+  outline: none;
+}
 .social-link:hover {
   background-color: var(--color-green);
   color: var(--color-grey-700);
