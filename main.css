@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+/* *::selection {
+  background-color: var(--color-green);
+  color: var(--color-grey-900);
+} */
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-grey-900);
+  color: var(--color-white);
+}
+.social-container {
+  background-color: var(--color-grey-800);
+  min-width: min(70vw, 275px);
+  padding: 2.25rem;
+  border-radius: 0.75rem;
+}
+.avatar {
+  text-align: center;
+}
+.avatar__image {
+  max-width: 6rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+.avatar__name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.avatar__address-location {
+  color: var(--color-green);
+  font-size: 0.875rem;
+  margin-bottom: 1.75rem;
+}
+.avatar__job-description {
+  font-size: 0.825rem;
+  font-weight: 300;
+  margin-bottom: 1.75rem;
+}
+.social-link-wrapper {
+  list-style-type: none;
+}
+.social-link {
+  padding: 0.75rem;
+  background-color: var(--color-grey-700);
+  margin-top: 0.825rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 100;
+}
+.social-link__url {
+  color: var(--color-white);
+  text-decoration: none;
+}
+.social-link:hover {
+  background-color: var(--color-green);
+  color: var(--color-grey-700);
+  font-weight: 600;
+  transition: all 0.25s linear;
+}
+.social-link:hover > .social-link__url {
+  color: var(--color-grey-700);
+}
+.attribution__wrapper {
+  text-align: center;
+  position: relative;
+  top: 5rem;
+}
+
+.attribution {
+  font-size: 13px;
+}
+.attribution a {
+  color: var(--color-green);
+}
+.attribution a:hover {
+  color: var(--color-white);
+}
